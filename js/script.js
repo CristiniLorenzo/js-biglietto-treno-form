@@ -9,8 +9,21 @@ const generateButton = document.querySelector('#generate-button');
 generateButton.addEventListener('click', function({
     // leggo i valori degli input
     const userName = document.querySelector('#user-name').value;
-    const userAge = document.querySelector('#user-age').value;
+    const userAge = parseInt(document.querySelector('#user-age').value);
     console.log(userName);
-    // calcolo del prezzo base 
+    // calcolo del prezzo base
+    const userKm = parseInt(document.querySelector('userKm').value); 
+    const basePrice = userKm * 0.21
+    // console.log(basePrice)
 
+    // calcolo dello sconto 
+    let calcDiscount;
+    if (userAge <= 18){
+        calcDiscount = basePrice * 20 / 100;
+    }
+    else if (userAge >=65){
+        calcDiscount = basePrice *40 / 100;
+    }
+
+    let finalPrice
 }))

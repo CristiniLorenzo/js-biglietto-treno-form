@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #B91547;
+    color: #fff;
+}
+.d-flex{
+    display: flex;
+}
+.bg-gray{
+    background-color: #808080;
+}
+.text-black{
+    color: black;
+}
+.text-red{
+    color: #B91547;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 50px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.col-33{
+    width: calc(100% / 3);
+    text-align: center;
+}
+.col-25{
+    width: 25%;
+}
+.col-75{
+    width: 75%;
+}
+.input{
+    border: 1px solid #B91547;
+    border-radius: 5px;
+    padding: 5px;  
+}
+
+button{
+    margin: 0 10px;
+}
